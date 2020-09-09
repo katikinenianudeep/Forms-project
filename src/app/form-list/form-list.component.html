@@ -1,0 +1,19 @@
+ <table class="table" >  
+  <tr ngclass="btn-primary"> 
+    <th class="tbl2">Id</th>   
+    <th class="tbl2">Name</th>  
+    <th class="tbl2">Email</th>  
+    <th class="tbl2">Phone Number</th>  
+    <th class="tbl2">Zip Code</th>  
+
+    
+  </tr>  
+     <td class="tbl2">{{parsedJson.id}}</td> 
+     <td class="tbl2">{{parsedJson.Name}}</td>  
+    <td class="tbl2">{{parsedJson.email}}</td>  
+    <td class="tbl2">{{parsedJson.phone}}</td>  
+    <td class="tbl2">{{parsedJson.zipcode}}</td> 
+    <button class="btn btn-primary mr-1" (click)="edit()">Edit</button>
+    <button  class="btn btn-secondary" (click)="cancel()">close</button>
+</table>  
+

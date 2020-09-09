@@ -1,0 +1,11 @@
+<p>Details page</p>
+<p>Id: <input type="text" [(ngModel)]="parseData.id"></p>
+<p>Name: <input type="text"  [(ngModel)]="parseData.Name"></p>
+<p>Email: <input type="text"  [(ngModel)]="parseData.email"></p>
+<p>Phone Number: <input type="text" minlength="10" maxlength="10" (keypress)=_keyPress($event) [(ngModel)]="parseData.phone"></p>
+<p>Zip Code: <input type="text" minlength="6" maxlength="6"  (keypress)=_keyPress($event) [(ngModel)]="parseData.zipcode"></p>
+
+
+  <button class="btn btn-primary mr-1" (click)="update()" >Update</button>
+
+  <button class="btn btn-secondary" type="reset" (click)="close()">cancel</button>
